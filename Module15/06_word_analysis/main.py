@@ -1,1 +1,3 @@
-# TODO здесь писать код
+word = input('Введите слово: ')
+letters = list(word)
+
