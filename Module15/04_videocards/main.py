@@ -3,7 +3,7 @@ count_video = int(input('Кол-во видеокарт: '))
 old_list = []
 new_list = []
 
-for i in range(count_video):
+for i in range(1, count_video + 1):
     print(i, 'Видеокарта: ', end='')
     model_video = int(input())
     old_list.append(model_video)
