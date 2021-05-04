@@ -1,10 +1,9 @@
 word = input('Введите слово: ')
 letters = list(word)
 
-count = 0
-с = 0
+count_unique = 0
+count_unique_2 = 0
 for i in letters:
-    for i_2 in letters:
-        if i_2 == i:
-            count += 1
-            print(count)
+    if letters.count(i) == 1:
+        count_unique += 1
+print('Кол-во уникальных букв:', count_unique)
