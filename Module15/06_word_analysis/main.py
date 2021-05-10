@@ -1,5 +1,6 @@
 word = input('Введите слово: ')
 letters = list(word)
+print(letters)
 
 count_unique = 0
 count_unique_2 = 0
