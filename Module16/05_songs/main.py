@@ -16,8 +16,7 @@ all_time_songs = 0
 for songs in range(count_songs):
     print('Название', songs + 1, 'песни: ', end='')
     name_songs = input()
-    for i_songs in violator_songs:
-        for i in i_songs:
-            if i == name_songs:
-                all_time_songs += i_songs[1]
+    for (i_songs, time_of_songs) in violator_songs:
+        if i_songs == name_songs:
+            all_time_songs += time_of_songs
 print('Общее время звучания песен:', round(all_time_songs, 2))
