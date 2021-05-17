@@ -1,7 +1,10 @@
-s = [1, 2, 3, 4, 5, 6, 7, 8]
-d = []
-for i in range(0, len(s)):
-    for i1 in range(0, i):
-        d.append(s[i1])
-print(s)
-print(d)
+name_details = input('Название детали - ')
+
+shop = [['каретка', 1200], ['шатун', 1000], ['седло', 300],
+        ['педаль', 100], ['седло', 1500], ['рама', 12000],
+        ['обод', 2000], ['шатун', 200], ['седло', 2700]]
+
+count_details = 0
+sum_details = 0
+for (detail_name, detail_cost) in shop:
+    print(detail_cost)

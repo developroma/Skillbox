@@ -6,10 +6,10 @@ shop = [['каретка', 1200], ['шатун', 1000], ['седло', 300],
 
 count_details = 0
 sum_details = 0
-for i in range(len(shop)):
-    if shop[i][0] == name_details:
+for (detail_name, detail_cost) in shop:
+    if detail_name == name_details:
         count_details += 1
-        sum_details += shop[i][1]
+        sum_details += detail_cost
 print('\nКол-во деталей - ', count_details)
 
 print('Общая стоимость - ', sum_details)
