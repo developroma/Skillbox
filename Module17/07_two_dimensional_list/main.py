@@ -1,2 +1,5 @@
-list_x = [x for i in range(1, 13) for x in range(i // 3)]
-print(list_x)
+big_list = []
+for i in range(4):
+    list_nums = [x + i for x in range(1, 10, 4)]
+    big_list.extend([list_nums])
+print(big_list)
