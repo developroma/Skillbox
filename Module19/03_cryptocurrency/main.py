@@ -44,5 +44,26 @@ data = {
     ]
 }
 
+print(f'Список ключей {data.keys()}')
+print(f'Список значений {data.values()}')
 
-# TODO здесь писать код
+other = {'total_diff': 100}
+new_key = data['ETH'].update(other)
+print(f'Новый ключ: {data}')
+
+for i_tokens in data['tokens']:
+    if i_tokens.get('fst_token_info'):
+        new_value = i_tokens.get('fst_token_info')
+        new_value['name'] = 'doge'
+print(f'Новое значение ключа: {data}')
+
+for i_tokens in data['tokens']:
+    total_out_values = i_tokens['total_out']
+    total_out_pop = i_tokens.pop('total_out')
+data['ETH']['total_out'] = total_out_values
+print(f'Новое значение total_out: {data}')
+
+for i_tokens in data['tokens']:
+    if i_tokens.get('sec_token_info'):
+       i_tokens['total_price'] = i_tokens['sec_token_info'].pop('price')
+print(f'Новое название ключа: {data}')
